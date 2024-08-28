@@ -1,6 +1,6 @@
 package com.project.finance_api.controllers;
 
-import com.project.finance_api.entities.User;
+import com.project.finance_api.entities.UserEntity;
 import com.project.finance_api.services.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> getInfoUser() {
+    public List<UserEntity> getInfoUser() {
         return userService.getUser();
     }
 
